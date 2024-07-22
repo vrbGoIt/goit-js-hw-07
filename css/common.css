@@ -53,3 +53,18 @@ ul {
     margin-top: 8px;
     color: #2e2f42;
 }
+
+.gallery {
+    width: 1440px;
+    background-color: white;
+    padding: 100px 156px;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.card-image {
+    width: 360px;
+    height: 300px;
+    display: block;
+}
