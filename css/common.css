@@ -69,3 +69,12 @@ ul {
     height: 300px;
     display: block;
 }
+
+#name-input {
+    border: solid 1px #808080;
+    border-radius: 4px;
+    padding: 6px 16px;
+    color: #2e2f42;
+    width: 360px;
+    font-size: 16px;
+}
