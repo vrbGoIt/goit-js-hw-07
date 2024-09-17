@@ -8,8 +8,9 @@ let size = 30;
 let boxis = '';
 let boxstr = '';
 
-
 buttonCreate.addEventListener("click", event => {
+
+  if (boxis !== '') destroyBoxes();
 
   if (numboxes.value > 0 && numboxes.value <= 100) {
     const numb = numboxes.value;
@@ -25,11 +26,13 @@ buttonCreate.addEventListener("click", event => {
   }
 });
 
-buttonDestroy.addEventListener("click", event => {
+buttonDestroy.addEventListener("click", destroyBoxes); 
+
+function destroyBoxes() {
     box.style.padding = "0px";
     box.innerHTML = '';
     boxis = '';
-});  
+}
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
